@@ -1,0 +1,1 @@
+connect.URL("https://www.speedtest.net/");
