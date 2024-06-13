@@ -17,8 +17,8 @@ public class RhinoFileExample {
 
             ScriptableObject.putProperty(scope, "connect", Context.javaToJS(guiAPI, scope));
 
-            try (Reader reader = new FileReader("example.js")) {
-                ctx.evaluateReader(scope, reader, "example.js", 1, null);
+            try (Reader reader = new FileReader("example.kts")) {
+                ctx.evaluateReader(scope, reader, "example.kts", 1, null);
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
