@@ -19,6 +19,6 @@ public class HttpJS {
         while ((inputLine = in.readLine()) != null) {
             response.append(inputLine);
         }
-        System.out.println(response);
+        System.err.println(response);
     }
 }
